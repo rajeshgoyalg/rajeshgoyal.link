@@ -1,0 +1,54 @@
+Rajesh Goyal
+rajeshgoyalg@gmail.com | 9910056363 | LinkedIn Profile | Delhi NCR, India
+Summary
+Seasoned technology leader with over 20 years of experience driving cloud strategy, platform modernization, and enterprise architecture across industries like Insurtech and digital infrastructure. Expert in leading large-scale transformation programs, building scalable DevOps cultures, and aligning IT initiatives with strategic business goals. Proven track record in modernizing legacy systems, enhancing developer efficiency, and delivering measurable business impact through innovative technology solutions.
+Work Experience
+Engineering Manager, Qoala06/2022 – Present
+
+Led platform engineering and DevOps strategy for Southeast Asia’s emerging Insurtech platforms, building scalable systems to support insurance product expansion.
+Architected a unified Insurtech platform by integrating fragmented services, enhancing data consistency, and accelerating product launches.
+Designed a scalable technology roadmap aligned with business goals for underwriting, policy servicing, and partner onboarding.
+Enabled 4X developer efficiency by building self-service DevOps tools, standardizing environments, and deploying secure Kubernetes (EKS) clusters.
+Spearheaded transition from monolith to microservices, migrating 100+ services to improve deployment agility and product iteration cycles.
+Achieved a 30% reduction in cloud costs through optimized resource provisioning, autoscaling, and FinOps practices.
+
+Technical Cloud Architect, Thomson Digital11/2021 – 06/2022
+
+Led a 15-member cross-functional team to architect and launch a scalable, AI-powered EdTech platform, enhancing learning experiences and operational agility across regional deployments.
+Designed secure, scalable backend APIs using Python FastAPI and PostgreSQL, ensuring robust system performance.
+
+Engineering Manager, VCloudX06/2020 – 11/2021
+
+Advanced DevOps maturity with fully automated pipelines and observability, reducing release lead time by 60% and improving reliability by 40%.
+Modernized 30+ microservices, refactored 20+ legacy projects, and standardized API design with Swagger/OpenAPI, accelerating client onboarding by 35%.
+Built a real-time observability pipeline using ElasticStack, creating 2000+ Kibana objects, reducing incident detection time by 50%.
+
+Technical Manager, NTT Ltd.07/2018 – 05/2020
+
+Delivered scalable, distributed applications for OSS/BSS and cloud platforms, achieving zero-downtime releases and a 25% performance boost.
+Directed infrastructure automation and CI/CD adoption, reducing deployment cycle time by 60% while mentoring teams in best practices.
+
+Senior Systems Analyst, Conduent06/2013 – 07/2018
+
+Developed scalable microservices and RESTful APIs for document review platforms (CLCS OmniX, Relativity, Viewpoint), improving modularity and performance.
+Enhanced system efficiency by 15% through data retrieval and query optimization.
+
+Senior Project Lead, Netlink Business Systems04/2012 – 05/2013
+
+Oversaw project delivery and technical coordination for enterprise software solutions, ensuring timely and high-quality outcomes.
+
+Technical Lead, Samin TekMindz11/2008 – 04/2012
+
+Led development of technical solutions, guiding teams in designing and implementing robust software systems.
+
+Education
+Bachelor in Software SystemsAgra University08/2000 – 06/2004
+Skills
+Leadership & Cross-Functional Skills: Mentorship, Stakeholder Management, Agile Coaching, Tech Roadmap Planning, Project Estimation, Communication, Decision-Making, Cross-Functional Collaboration, Hiring & Technical RecruitmentCloud, DevOps, DevSecOps & SRE: AWS, Azure, OCI, Kubernetes, Docker, Terraform, Ansible, GitHub Actions CI, ArgoCD, Jenkins, Serverless, API Gateways, CDN, Virtualization, Containers, Cloud Security, Trivy, SonarQube, GitHub, Big Data, GitOps, SAST, DAST, FinOps, Datadog, Prometheus, GrafanaArchitecture & System Design: Microservices, Event-Driven, Pub-Sub, Client-Server, Distributed Systems, ACID, RESTful, Scalability, Reliability, TDD, DDD, OOP, MVC, Clean Code, Refactoring, OpenAPI, AIProgramming Frameworks & DB: Python, JavaScript, Node.js, Golang, Flask, FastAPI, Express, Echo, MERN, LEMP, Kafka, Redis, MySQL, PostgreSQL, MongoDB, React.js, Angular.js, Next.js, TypeScript, Celery
+Achievements
+
+Leadership & Mentorship: Scaled agile teams across engineering, SRE, and DevOps, fostering ownership and technical excellence. Mentored engineers to drive feature lifecycle accountability.
+Cloud-native Scalability: Architected cloud platforms on AWS, Azure, and GCP with Kubernetes and Terraform, delivering resilient, large-scale data processing systems.
+Observability & Reliability Engineering: Embedded SRE practices with real-time monitoring and alerting, defining SLOs/SLIs to improve system availability and reduce MTTR.
+DevSecOps & Compliance: Integrated security scanning and IAM governance in CI/CD pipelines, standardizing security across cloud environments to enhance compliance.
+
