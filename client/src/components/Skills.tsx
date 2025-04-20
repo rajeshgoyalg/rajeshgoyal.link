@@ -20,7 +20,7 @@ const SkillBar = ({ name, percentage }: { name: string; percentage: number }) =>
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 bg-white">
+    <section id="skills" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-[#1e293b] mb-3">Skills</h2>
@@ -68,10 +68,10 @@ const Skills = () => {
             {technologies.map((tech, index) => (
               <div
                 key={index}
-                className="bg-gray-50 rounded-lg p-4 flex flex-col items-center justify-center shadow-sm border border-gray-200 hover:shadow-md transition duration-300"
+                className="bg-gray-50 rounded-lg p-4 flex flex-col items-center justify-center shadow-sm border border-gray-200 hover:shadow-lg transition duration-300 hover:bg-white transform hover:-translate-y-1"
               >
                 <i
-                  className={`${tech.icon} text-3xl mb-3`}
+                  className={`${tech.icon} text-3xl mb-3 transition-transform duration-300 hover:scale-125`}
                   style={{ color: tech.color }}
                 ></i>
                 <span className="text-gray-700 text-sm font-medium">

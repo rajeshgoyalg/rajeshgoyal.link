@@ -12,15 +12,41 @@ const Experience = () => {
         <div className="max-w-4xl mx-auto">
           {/* Main Work Experience */}
           {workExperience.map((job, index) => (
-            <div key={index} className="timeline-container mb-12 relative">
+            <div key={index} className="timeline-container mb-12 relative group">
               <div className="absolute w-4 h-4 rounded-full bg-primary left-[-9px] top-2"></div>
               <div className="mb-3">
                 <h3 className="text-xl font-semibold text-[#1e293b]">{job.role}</h3>
                 <div className="flex justify-between items-center">
-                  <p className="text-primary font-medium">{job.company}</p>
+                  <p className="text-primary font-medium">
+                    <a 
+                      href={job.companyUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="hover:underline flex items-center"
+                    >
+                      {job.company}
+                      <i className="fas fa-external-link-alt text-xs ml-1"></i>
+                    </a>
+                  </p>
                   <p className="text-gray-500 text-sm">{job.period}</p>
                 </div>
               </div>
+              
+              {/* Key Metrics - Shown on hover */}
+              {job.keyMetrics && (
+                <div className="bg-blue-50 border border-blue-100 rounded-lg p-4 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform group-hover:translate-y-0 -translate-y-1">
+                  <h4 className="text-sm font-semibold text-primary mb-2">Key Impact Metrics:</h4>
+                  <div className="grid grid-cols-2 gap-2">
+                    {job.keyMetrics.map((metric, metricIndex) => (
+                      <div key={metricIndex} className="flex items-center">
+                        <i className="fas fa-chart-line text-xs mr-2 text-blue-500"></i>
+                        <span className="text-sm text-gray-700">{metric}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+              
               <ul className="list-disc list-inside text-gray-700 space-y-2 pl-4">
                 {job.responsibilities.map((item, i) => (
                   <li key={i}>{item}</li>
@@ -54,7 +80,17 @@ const Experience = () => {
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
               <h4 className="text-lg font-medium text-[#1e293b]">{education.degree}</h4>
               <div className="flex justify-between items-center mt-1">
-                <p className="text-primary">{education.institution}</p>
+                <p className="text-primary">
+                  <a 
+                    href={education.institutionUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:underline flex items-center"
+                  >
+                    {education.institution}
+                    <i className="fas fa-external-link-alt text-xs ml-1"></i>
+                  </a>
+                </p>
                 <p className="text-gray-500 text-sm">{education.period}</p>
               </div>
             </div>

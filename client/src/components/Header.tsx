@@ -1,10 +1,16 @@
 import { useState } from "react";
+import { useTheme } from "next-themes";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
+  };
+  
+  const toggleTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
   };
 
   const scrollToSection = (id: string) => {
@@ -19,7 +25,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-md">
+    <header className="sticky top-0 z-50 bg-white shadow-md transition-colors duration-300">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <button
@@ -30,7 +36,7 @@ const Header = () => {
           </button>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-8 items-center">
             <button
               onClick={() => scrollToSection("about")}
               className="text-dark hover:text-primary font-medium transition duration-300"
@@ -42,6 +48,12 @@ const Header = () => {
               className="text-dark hover:text-primary font-medium transition duration-300"
             >
               Experience
+            </button>
+            <button
+              onClick={() => scrollToSection("achievements")}
+              className="text-dark hover:text-primary font-medium transition duration-300"
+            >
+              Achievements
             </button>
             <button
               onClick={() => scrollToSection("skills")}
@@ -56,16 +68,15 @@ const Header = () => {
               Certifications
             </button>
             <button
-              onClick={() => scrollToSection("achievements")}
-              className="text-dark hover:text-primary font-medium transition duration-300"
+              onClick={toggleTheme}
+              className="ml-2 p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition-colors duration-300 flex items-center justify-center"
+              aria-label="Toggle theme"
             >
-              Achievements
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="text-dark hover:text-primary font-medium transition duration-300"
-            >
-              Contact
+              {theme === 'dark' ? (
+                <i className="fas fa-sun text-yellow-500"></i>
+              ) : (
+                <i className="fas fa-moon text-blue-900"></i>
+              )}
             </button>
           </nav>
 
@@ -98,6 +109,12 @@ const Header = () => {
               Experience
             </button>
             <button
+              onClick={() => scrollToSection("achievements")}
+              className="text-dark hover:text-primary font-medium transition duration-300"
+            >
+              Achievements
+            </button>
+            <button
               onClick={() => scrollToSection("skills")}
               className="text-dark hover:text-primary font-medium transition duration-300"
             >
@@ -109,18 +126,20 @@ const Header = () => {
             >
               Certifications
             </button>
-            <button
-              onClick={() => scrollToSection("achievements")}
-              className="text-dark hover:text-primary font-medium transition duration-300"
-            >
-              Achievements
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="text-dark hover:text-primary font-medium transition duration-300"
-            >
-              Contact
-            </button>
+            <div className="pt-4 border-t border-gray-200 mt-4 flex justify-between items-center">
+              <span className="text-sm text-gray-600">Switch Theme</span>
+              <button
+                onClick={toggleTheme}
+                className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition-colors duration-300 flex items-center justify-center"
+                aria-label="Toggle theme"
+              >
+                {theme === 'dark' ? (
+                  <i className="fas fa-sun text-yellow-500"></i>
+                ) : (
+                  <i className="fas fa-moon text-blue-900"></i>
+                )}
+              </button>
+            </div>
           </nav>
         </div>
       </div>

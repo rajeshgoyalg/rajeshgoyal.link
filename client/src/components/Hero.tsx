@@ -76,20 +76,28 @@ const Hero = () => {
               </p>
             </div>
             <p className="text-lg mb-8 text-gray-300 max-w-2xl">
-              {personalInfo.summary}
+              Enabling enterprise-grade innovation through strategic technology leadership and scalable solutions. From cloud architecture to DevOps transformation, I build technology ecosystems that drive measurable business impact with future-proof reliability.
             </p>
             <div className="flex flex-wrap gap-4">
               <button
-                onClick={() => scrollToSection("contact")}
-                className="bg-primary hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-md transition duration-300"
-              >
-                Get in Touch
-              </button>
-              <button
                 onClick={() => scrollToSection("experience")}
+                className="bg-primary hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-md transition duration-300 inline-flex items-center"
+              >
+                <i className="fas fa-briefcase mr-2"></i> View Experience
+              </button>
+              <a
+                href={personalInfo.linkedIn}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-transparent border border-white text-white font-medium py-2 px-6 rounded-md hover:bg-white hover:text-[#1e293b] transition duration-300 inline-flex items-center"
+              >
+                <i className="fab fa-linkedin mr-2"></i> Get In Touch
+              </a>
+              <button
+                onClick={() => scrollToSection("about")}
                 className="bg-transparent border border-white text-white font-medium py-2 px-6 rounded-md hover:bg-white hover:text-[#1e293b] transition duration-300"
               >
-                View Experience
+                Learn More
               </button>
             </div>
           </div>

@@ -9,21 +9,30 @@ export const personalInfo = {
   linkedIn: "https://www.linkedin.com/in/rajeshgoyalg/",
   github: "https://github.com/rajeshgoyalg",
   twitter: "https://x.com/rajeshgoyalg",
-  summary: "Seasoned technology leader with over 20 years of experience driving cloud strategy, platform modernization, and enterprise architecture across industries like Insurtech and digital infrastructure. Expert in leading large-scale transformation programs, building scalable DevOps cultures, and aligning IT initiatives with strategic business goals. Proven track record in modernizing legacy systems, enhancing developer efficiency, and delivering measurable business impact through innovation."
+  resumeLink: "https://drive.google.com/file/d/17mp3ahWSfzJ-IsCqlKaj1GchvaJyxl8O/view?usp=drive_link",
+  summary: "With 20+ years of experience spanning digital transformation, product innovation, and scalable platform delivery, I drive tech-enabled growth at the intersection of technology, product, and strategy. Specializing in transforming ambiguity into execution while partnering with C-level stakeholders to deliver solutions that unlock growth and efficiency. Most recently leading digital transformation initiatives at Qoala across Southeast Asia."
 };
 
 export const roleTitles = [
   "Technology Leader & Engineering Manager",
   "Cloud & Solution Architect",
   "Cloud & Platform Transformation Leader",
-  "DevOps, SRE & Platform Manager"
+  "DevOps, SRE & Platform Manager",
+  "Head of Engineering & Vice President of Technology"
 ];
 
 export const workExperience = [
   {
     role: "Engineering Manager",
     company: "Qoala",
+    companyUrl: "https://qoala.com",
     period: "06/2022 – Present",
+    keyMetrics: [
+      "4X developer efficiency increase",
+      "30% reduction in cloud costs",
+      "100+ services migrated to microservices",
+      "5 countries market expansion"
+    ],
     responsibilities: [
       "Led platform engineering and DevOps strategy for Southeast Asia's emerging Insurtech platforms, building scalable systems to support insurance product expansion.",
       "Architected a unified Insurtech platform by integrating fragmented services, enhancing data consistency, and accelerating product launches.",
@@ -36,7 +45,14 @@ export const workExperience = [
   {
     role: "Technical Cloud Architect",
     company: "Thomson Digital",
+    companyUrl: "https://www.qanditoday.com",
     period: "11/2021 – 06/2022",
+    keyMetrics: [
+      "15 members cross-functional team",
+      "35% faster student onboarding",
+      "AI Driven Learning Platform",
+      "50+ API endpoints secured"
+    ],
     responsibilities: [
       "Led a 15-member cross-functional team to architect and launch a scalable, AI-powered EdTech platform, enhancing learning experiences and operational agility across regional deployments.",
       "Designed secure, scalable backend APIs using Python FastAPI and PostgreSQL, ensuring robust system performance."
@@ -45,6 +61,7 @@ export const workExperience = [
   {
     role: "Engineering Manager",
     company: "VCloudX",
+    companyUrl: "https://www.enablex.io",
     period: "06/2020 – 11/2021",
     responsibilities: [
       "Advanced DevOps maturity with fully automated pipelines and observability, reducing release lead time by 60% and improving reliability by 40%.",
@@ -55,6 +72,7 @@ export const workExperience = [
   {
     role: "Technical Manager",
     company: "NTT Ltd.",
+    companyUrl: "https://www.global.ntt",
     period: "07/2018 – 05/2020",
     responsibilities: [
       "Delivered scalable, distributed applications for OSS/BSS and cloud platforms, achieving zero-downtime releases and a 25% performance boost.",
@@ -64,6 +82,7 @@ export const workExperience = [
   {
     role: "Senior Systems Analyst",
     company: "Conduent",
+    companyUrl: "https://www.conduent.com",
     period: "06/2013 – 07/2018",
     responsibilities: [
       "Developed scalable microservices and RESTful APIs for document review platforms (CLCS OmniX, Relativity, Viewpoint), improving modularity and performance.",
@@ -108,6 +127,7 @@ export const previousRoles = [
 export const education = {
   degree: "Bachelor in Software Systems",
   institution: "Agra University",
+  institutionUrl: "https://dbrau.ac.in",
   period: "08/2000 – 06/2004"
 };
 

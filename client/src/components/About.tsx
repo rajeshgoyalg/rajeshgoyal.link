@@ -10,22 +10,27 @@ const About = () => {
         </div>
 
         <div className="flex flex-col md:flex-row gap-12">
-          <div className="md:w-1/2">
-            <h3 className="text-2xl font-semibold mb-4 text-primary">Who I Am</h3>
+          <div className="md:w-2/3">
+            <h3 className="text-2xl font-semibold mb-4 text-primary">Driving Change at the Intersection of Tech, Product & Strategy</h3>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              I'm a seasoned technology leader with over 20 years of experience driving 
-              cloud strategy, platform modernization, and enterprise architecture across 
-              industries like Insurtech and digital infrastructure.
+              With 20+ years of experience spanning digital transformation, product innovation, and scalable platform delivery, 
+              I've built and led digital ecosystems for startups, growth-stage companies, and global enterprises.
             </p>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              My expertise lies in leading large-scale transformation programs, building 
-              scalable DevOps cultures, and aligning IT initiatives with strategic business 
-              goals. I have a proven track record in modernizing legacy systems, enhancing 
-              developer efficiency, and delivering measurable business impact through innovation.
+              I specialize in transforming ambiguity into execution. Whether launching new ventures or modernizing legacy systems, 
+              I bring a strategic, outcome-driven mindset — partnering with C-level stakeholders, aligning cross-functional teams, 
+              and delivering tech solutions that unlock growth and efficiency.
+            </p>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              Most recently, I've led digital growth initiatives at Qoala, where I shaped product strategy, scaled B2C digital 
+              operations across Southeast Asia, and orchestrated multi-market tech transformations.
+            </p>
+            <p className="text-gray-700 mb-6 leading-relaxed font-medium">
+              Specialties: Product Strategy · Tech-Enabled Growth · Digital Operating Models · AI & Automation · Cross-Functional Leadership
             </p>
           </div>
 
-          <div className="md:w-1/2">
+          <div className="md:w-1/3">
             <h3 className="text-2xl font-semibold mb-4 text-primary">Contact Details</h3>
             <div className="space-y-4">
               <div className="flex items-center">
@@ -34,7 +39,9 @@ const About = () => {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500">Email</p>
-                  <p className="text-gray-700">{personalInfo.email}</p>
+                  <a href={`mailto:${personalInfo.email}`} className="text-gray-700 hover:text-primary transition-colors">
+                    {personalInfo.email}
+                  </a>
                 </div>
               </div>
 
@@ -54,18 +61,40 @@ const About = () => {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500">Location</p>
-                  <p className="text-gray-700">{personalInfo.location}</p>
+                  <a href="https://maps.app.goo.gl/grnodHPG9AmW4vwb9" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary transition-colors">
+                    {personalInfo.location}
+                  </a>
                 </div>
               </div>
 
               <div className="flex items-center">
                 <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-primary mr-4">
-                  <i className="fab fa-linkedin"></i>
+                  <i className="fas fa-globe"></i>
                 </div>
                 <div>
-                  <p className="text-sm text-gray-500">LinkedIn</p>
-                  <a href={personalInfo.linkedIn} className="text-primary hover:underline">
-                    LinkedIn Profile
+                  <p className="text-sm text-gray-500">Social Links</p>
+                  <div className="flex space-x-3 mt-1">
+                    <a href={personalInfo.linkedIn} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors">
+                      <i className="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-600 dark:text-gray-300 dark:hover:text-white transition-colors">
+                      <i className="fab fa-github text-xl"></i>
+                    </a>
+                    <a href={personalInfo.twitter} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-colors">
+                      <i className="fab fa-twitter text-xl"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="flex items-center">
+                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-primary mr-4">
+                  <i className="fas fa-file-pdf"></i>
+                </div>
+                <div>
+                  <p className="text-sm text-gray-500">Resume</p>
+                  <a href={personalInfo.resumeLink} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                    Download Resume
                   </a>
                 </div>
               </div>

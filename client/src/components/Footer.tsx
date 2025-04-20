@@ -37,6 +37,12 @@ const Footer = () => {
               Experience
             </button>
             <button
+              onClick={() => scrollToSection("achievements")}
+              className="text-gray-300 hover:text-white transition duration-300"
+            >
+              Achievements
+            </button>
+            <button
               onClick={() => scrollToSection("skills")}
               className="text-gray-300 hover:text-white transition duration-300"
             >
@@ -47,18 +53,6 @@ const Footer = () => {
               className="text-gray-300 hover:text-white transition duration-300"
             >
               Certifications
-            </button>
-            <button
-              onClick={() => scrollToSection("achievements")}
-              className="text-gray-300 hover:text-white transition duration-300"
-            >
-              Achievements
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="text-gray-300 hover:text-white transition duration-300"
-            >
-              Contact
             </button>
           </div>
         </div>

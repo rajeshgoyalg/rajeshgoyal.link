@@ -2,7 +2,7 @@ import { certifications } from "@/lib/data";
 
 const Certifications = () => {
   return (
-    <section id="certifications" className="py-16 bg-gray-50">
+    <section id="certifications" className="py-16 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-[#1e293b] mb-3">Certifications</h2>
