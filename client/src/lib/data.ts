@@ -17,8 +17,7 @@ export const roleTitles = [
   "Technology Leader & Engineering Manager",
   "Cloud & Solution Architect",
   "Cloud & Platform Transformation Leader",
-  "DevOps, SRE & Platform Manager",
-  "Head of Engineering & Vice President of Technology"
+  "DevOps, SRE & Platform Manager"
 ];
 
 export const workExperience = [
